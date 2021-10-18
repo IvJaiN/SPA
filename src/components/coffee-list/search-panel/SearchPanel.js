@@ -20,9 +20,10 @@ const SearchPanel = props => {
             <div className="search-panel_right">
                 <span className='search-panel__text'>Or filter</span>
                 <div className="search-panel__buttons">
-                    {buttons.map(button => {
+                    {buttons.map((button, idx) => {
                         return (
                             <button
+                                key={idx}
                                 className={button.isActive ? 'search-panel__button _active': 'search-panel__button'}
                                 onClick={() => onButtonClick(button.name)}
                             >

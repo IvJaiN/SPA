@@ -32,9 +32,10 @@ const ForYour = props => {
                 </div>
             </section>
             <div className="coffee-list__container">
-                {props.data.map(item => {
+                {props.data.map((item, idx) => {
                     return (
                         <CoffeeListItem
+                            key={idx}
                             coffeeData={item}
                         />
                     )

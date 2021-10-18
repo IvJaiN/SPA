@@ -40,9 +40,10 @@ const CoffeeList = (props) => {
                 onButtonClick={onButtonClick}
             />
             <div className="coffee-list__container">
-                {filterArray.map(item => {
+                {filterArray.map((item,idx) => {
                     return (
                         <CoffeeListItem
+                            key={idx}
                             coffeeData={item}
                         />
                     )
