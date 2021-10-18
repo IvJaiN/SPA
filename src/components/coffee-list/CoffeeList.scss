@@ -1,0 +1,10 @@
+.coffee-list{
+  padding: 60px 0 30px;
+}
+.coffee-list__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 870px;
+  margin: 0 auto;
+}

@@ -1,0 +1,42 @@
+.about-coffee {
+  display: flex;
+  padding: 70px 0;
+  align-items: center;
+  &_left {
+    width: 50%;
+  }
+  &_right {
+    width: 50%;
+    text-align: left;
+  }
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 22px;
+  }
+  &__img {
+    margin-bottom: 26px;
+    text-align: center;
+  }
+  &__country {
+    margin-bottom: 16px;
+    & span {
+      font-weight: 700;
+    }
+  }
+  &__text {
+    margin-bottom: 16px;
+    line-height: 20px;
+    & span {
+      font-weight: 700;
+    }
+  }
+  &__price {
+    font-weight: 700;
+    & span {
+      font-size: 25px;
+      font-weight: 400;
+    }
+  }
+}

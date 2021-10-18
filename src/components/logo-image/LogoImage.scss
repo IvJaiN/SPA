@@ -1,0 +1,38 @@
+.logo-image {
+  display: inline-block;
+  position: relative;
+  padding: 0 25px;
+  &:before,
+  &:after {
+    content: "";
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+  }
+  &:before {
+    left: 100%;
+  }
+  &:after {
+    right: 100%;
+  }
+  &.black {
+    & path {
+      fill: black;
+    }
+    &:before,
+    &:after {
+      background-color: black;
+    }
+  }
+  &.white {
+    & path {
+      fill: white;
+    }
+    &:before,
+    &:after {
+      background-color: white;
+    }
+  }
+}
+
